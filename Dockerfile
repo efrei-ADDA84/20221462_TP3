@@ -8,8 +8,7 @@ WORKDIR /app
 COPY main.py /app
 
 #les dependances
-RUN pip3 install --no-cache-dir requests==2.28.2
-RUN pip3 install flask 
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Définir la commande d'exécution par défaut de l'image
 CMD [ "python3", "main.py" ]
