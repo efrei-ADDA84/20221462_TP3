@@ -6,6 +6,7 @@ WORKDIR /app
 
 #copier le contenu de main dans l'image
 COPY main.py /app
+COPY requirements.txt /app
 
 #les dependances
 RUN pip3 install --no-cache-dir -r requirements.txt
